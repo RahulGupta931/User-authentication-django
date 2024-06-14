@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in page</title>
+</head>
+
+<body>
+    <h1>LOG IN PAGE</h1>
+    <hr>
+    <form method="POST" >
+        {%csrf_token%}
+        <label>User name</label>
+        <br>
+        <input type="text" name="username">
+        <br>
+        <label>Password</label>
+        <br>
+        <input type="password" name="password">
+        <br>
+        
+
+        <button type="submit">login</button>
+        <a href="http://127.0.0.1:8000/signup/">for sign up</a>
+    </form>
+</body>
+
+</html>
